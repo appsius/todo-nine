@@ -16,7 +16,7 @@ export default memo(function Todo({ id, task, completed }) {
 
   return (
     <div>
-      <ListItem style={{ height: '64px' }}>
+      <ListItem component='div' style={{ height: '64px' }}>
         {isEditing ? (
           <EditTodoForm id={id} task={task} toggleEditForm={toggle} />
         ) : (
